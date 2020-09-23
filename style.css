@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body{
+    background-color: rgb(76, 113, 134);
+    margin: 0px;
+    font-family: Ubuntu;
+}
+
+.container{
+    position: absolute;
+    background-color: white;
+    height: 450px;
+    top: 50%;
+    margin-top: -225px;
+    width: 350px;
+    left: 50%;
+    margin-left: -175px;;
+    
+    border-radius: 30px;
+    
+}
+
+.logo{
+    position: relative;
+    border-radius: 250px;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.formulario{
+    position: absolute;
+    width: 250px;
+    left: 50%;
+    margin-left: -125px;
+    
+}
+
+#imagen{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+
+}
+
+#ingresar{
+    height: 50%;
+    width: 100%;
+    
+    font-weight: lighter;
+}
+
+#registrar{
+    height: 50%;
+    width: 100%;
+    background-color: red;
+}
+#divreg{
+    position: absolute;
+    text-align: center;
+    
+    width: 175px;
+    left: 50%;
+    top: 0%;
+    margin: 0%;
+}
+#diving{
+    position: relative;
+    text-align: center;
+    width: 175px;
+    top: 0%;
+    margin-right: 0px;
+}
+
+#h2reg:hover, #h2ing:hover{
+    color: red;
+}
+
+h2{
+    
+    text-decoration: none;
+    background-image: linear-gradient(#ff6565, #ff6565);
+
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+h2:hover, h2:focus {
+    background-size: 100% 2px;
+}
+
+input[type=text],input[type=password]{
+    width: 250px;
+    height: 25px;
+    
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: grey;
+    
+}
+
+input[type=submit]{
+    width: 254px;
+    height: 30px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: #ff6565;
+    font-family: Ubuntu;
+}
+
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+
+h4{
+    text-align: center;
+}
+
+::placeholder{
+    font-family: Ubuntu;
+}
