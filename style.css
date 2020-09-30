@@ -12,6 +12,8 @@ body{
     height: 450px;
     top: 50%;
     margin-top: -225px;
+    bottom: 50%;
+    
     width: 350px;
     left: 50%;
     margin-left: -175px;;
@@ -37,6 +39,19 @@ body{
     
 }
 
+.f1{
+    position: absolute;
+    left: -60%;
+    top: 10%;
+    width: 250px;
+}
+.f2{
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    width: 250px;
+}
+
 #imagen{
     position: fixed;
     height: 100%;
@@ -55,7 +70,11 @@ body{
 #registrar{
     height: 50%;
     width: 100%;
-    background-color: red;
+    
+}
+#btnregistrar{
+    position: absolute;
+    margin-top: 125%;
 }
 #divreg{
     position: absolute;
@@ -93,7 +112,12 @@ h2:hover, h2:focus {
     background-size: 100% 2px;
 }
 
-input[type=text],input[type=password]{
+select{
+    width: 250px;
+    height: 25px;
+}
+
+input[type=text],input[type=password], input[type=email]{
     width: 250px;
     height: 25px;
     
