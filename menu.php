@@ -21,12 +21,13 @@ error_reporting(E_ALL);
    
     require("connDB.php");
     $ID = $_SESSION['ID_user'];
-    $query="SELECT u.DOC_user, CONCAT(u.nom_user,' ',u.ape_user) as nombre, n.desc_nivel  FROM usuario u, nivel_usuario n WHERE DOC_user='$ID' and n.ID_nivel=u.ID_nivel";
+    $query="SELECT u.DOC_user, CONCAT(u.nom_user,' ',u.ape_user) as nombre, n.desc_nivel, u.ruta_foto, u.nombre_foto  FROM usuario u, nivel_usuario n WHERE DOC_user='$ID' and n.ID_nivel=u.ID_nivel";
     $res = mysqli_query($link,$query);
 
     while($row=mysqli_fetch_array($res)){
-        echo "<h4>".$row['DOC_user']."   ".$row['nombre']."   ".$row['desc_nivel']."</h4><br>";
+        echo "<h4>"."<img src='".$row['ruta_foto']."' >".$row['DOC_user']."   ".$row['nombre']."   ".$row['desc_nivel']."</h4><br>";
     }
+    
     ob_end_flush();
     ?>
 </body>

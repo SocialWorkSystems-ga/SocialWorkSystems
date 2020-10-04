@@ -7,8 +7,9 @@
     <title>SocialWork Systems</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <img id="imagen" src="fondo_login.jpg">
+    <img id="imagen" src="fondo_login.jpg" style="width: 100%;">
         <div class="container" id="container">
             <div id="diving" >
                 <h2 id="h2ing" style="font-weight: bold; color: black;" onclick="ingresar()">
@@ -37,7 +38,7 @@
             <h1 style="text-align: center;">Formulario de registro</h1>
                 <div class="formulario">
                 
-                    <form method="post">
+                    <form method="post" enctype="multipart/form-data">
                         
                     <div class="f1">
                         <span>Tipo de documento:</span>
@@ -82,6 +83,7 @@
                         <br>         
                         <span> Foto<input type="file" name="img" ></span>
                         <br>
+                        
                         <br>
                         <input type="text" name="usuario" placeholder="Usuario">
                         <input type="password" name="contraseña" placeholder="Contraseña">
