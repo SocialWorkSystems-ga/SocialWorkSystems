@@ -20,3 +20,6 @@ function ingresar(){
     document.getElementById("divreg").style="width: 175px";
 
 }
+function d() {
+    alert("s");
+}

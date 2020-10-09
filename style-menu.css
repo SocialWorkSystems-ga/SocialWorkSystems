@@ -1,50 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 body{
-    background-color: rgb(76, 113, 134);
+    background-color: white;
     margin: 0px;
     font-family: Ubuntu;
 }
 
-.container{
-    position: absolute;
-    background-color: white;
-    height: 450px;
-    top: 50%;
-    margin-top: -225px;
-    bottom: 50%;
-    
-    width: 350px;
-    left: 50%;
-    margin-left: -175px;;
-    
-    border-radius: 30px;
-    
+.opt{
+    text-decoration: none;
+    text-align: center;
+    width:100%;
+    display:block;
+    padding:8% 0px 8% 0px;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0;
+    color: ivory;
 }
-
-.container-menu{
-    height: 100%;
-    width: 100%;
-    background-color: white;
-}
-
-.logo{
-    position: relative;
-    border-radius: 250px;
-    width: 100px;
-    height: 100px;
-    left: 50%;
-    margin-left: -50px;
+.opt:hover{
+    background-color:#A7ACC1;
 }
 
 .navbar{
     width: 100%;
     height: 60px;
     top: 0%;
-    
+    background-color: #303448;
+    color: white;
 }
 
-
+#titulo{
+    position: absolute;
+}
 
 .pf{
     margin: 5px;
@@ -61,6 +49,15 @@ body{
     
 }
 
+.sidebar{
+    height:100%;
+    width:17%;
+    background-color: #6D728C;
+    position:fixed!important;
+    z-index:1;
+    overflow:auto;
+}
+
 .f1{
     position: absolute;
     left: -60%;
@@ -74,70 +71,12 @@ body{
     width: 250px;
 }
 
-#imagen{
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    opacity: 0.5;
-
+#horas{
+    background-color: lightcoral;
+    height: 35%;
+    width: 50%;
 }
 
-#ingresar{
-    height: 50%;
-    width: 100%;
-    
-    font-weight: lighter;
-}
-
-#registrar{
-    height: 50%;
-    width: 100%;
-    
-}
-#btnregistrar{
-    position: absolute;
-    margin-top: 125%;
-}
-#divreg{
-    position: absolute;
-    text-align: center;
-    
-    width: 175px;
-    left: 50%;
-    top: 0%;
-    margin: 0%;
-}
-#diving{
-    position: relative;
-    text-align: center;
-    width: 175px;
-    top: 0%;
-    margin-right: 0px;
-}
-
-#h2reg:hover, #h2ing:hover{
-    color: red;
-}
-
-h2{
-    
-    text-decoration: none;
-    background-image: linear-gradient(#ff6565, #ff6565);
-
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
-}
-
-h2:hover, h2:focus {
-    background-size: 100% 2px;
-}
-
-select{
-    width: 250px;
-    height: 25px;
-}
 
 input[type=text],input[type=password], input[type=email]{
     width: 250px;
@@ -185,4 +124,43 @@ h4{
 
 ::placeholder{
     font-family: Ubuntu;
+}
+
+#cont-horas{
+    position: absolute;
+    width: 170px;
+    height: 70px;
+    background-color: rgb(190, 190, 190);
+    border: 1px solid;
+    left: 83%;
+    top: 12.5%;
+    border-radius: 10px;
+}
+
+#horasletra{
+    width: 90px;
+    background-color: rgb(150, 150, 150);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 70px;
+    float: left;
+    border-right: 1px solid;
+    text-align: center;
+    margin-top: 0%;
+}
+
+
+#horasnum{
+    width: 25px;
+   
+    float: left;
+    margin-left: 13%;
+    text-align: center;
+    margin-top: -5%;
+}
+#ultimoacceso{
+    margin-top: 2%;
+    margin-left: 2%;
+    height: 20px;
+    
 }

@@ -28,8 +28,11 @@
     
                         $query="SELECT usuario FROM usuario";
                         $res2=mysqli_query($link,$query);
-
+                        $go=true;
                         while ($row = mysqli_fetch_array($res2)) {
+                            if (count($row)) {
+                                $go=true;
+                            }
                             if ($row['usuario']==$usuario) {
                                $go=false;
                             break;

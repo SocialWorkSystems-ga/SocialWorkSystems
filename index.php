@@ -105,6 +105,6 @@
 
         </div>
 </body>
-<script src="http://socialworksystems.ga/menu_login.js"></script>
+<script src="javascript.js"></script>
 </html>
 <?php ob_end_flush();?>
